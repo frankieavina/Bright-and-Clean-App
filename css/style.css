@@ -193,6 +193,13 @@ header .container nav ul li a {
     border-radius: 2rem;
 }
 
+.logo-pic{
+    width: 85px; 
+    height: auto;
+    border-radius: 50%; 
+    object-fit: cover;
+}
+
 header .container nav ul li a.active,
 header .container nav ul li a:hover {
     background-color: var(--blueColor);
@@ -231,6 +238,12 @@ header .container nav ul li a:hover {
 
     header .container nav ul li {
         padding-bottom: 0;
+    }
+}
+
+@media(min-width: 390px) {
+    .logo-pic{
+        width: 45px;
     }
 }
 
@@ -496,7 +509,7 @@ header .container nav ul li a:hover {
 
 .about .container h2 {
     text-align: center;
-    margin-top: 7rem;
+    margin-top: 1rem;
 }
 
 .about .container .about-container {
@@ -542,6 +555,17 @@ header .container nav ul li a:hover {
 
 .about .container .about-container .box p {
     margin-top: 2rem;
+}
+
+.profile_pic{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.profile-pic-img{
+    width: 350px; 
+    border-radius: 1.5rem; 
 }
 
 /* End About Section  */
