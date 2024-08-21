@@ -512,6 +512,14 @@ header .container nav ul li a:hover {
     margin-top: 1rem;
 }
 
+.about .container h4 {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: var(--textColor);
+}
+
 .about .container .about-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(24.8rem, 100%), 1fr));
@@ -557,15 +565,51 @@ header .container nav ul li a:hover {
     margin-top: 2rem;
 }
 
-.profile_pic{
+/* .profile_pic{
     display: flex;
     justify-content: center;
     margin-top: 2rem;
-}
+} */
 
 .profile-pic-img{
     width: 350px; 
     border-radius: 1.5rem; 
+    justify-self: center;
+}
+
+.about_container{
+    max-width: 968px;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: grid;
+    gap: 1.5rem;
+
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    column-gap: 4rem;
+
+    margin-top: 6rem;
+}
+
+@media screen and (max-width: 992px) {
+    .about_container{
+        grid-template-columns: 1fr;
+        row-gap: 2.5rem;
+    }
+
+    .profile-pic-img{
+        width: 220px;
+    }
+
+    .about_data{
+        text-align: center;
+    }
+
+    .about_description{
+        padding: 0 5rem;
+        margin-bottom: 2rem;
+    }
 }
 
 /* End About Section  */
@@ -1109,6 +1153,13 @@ footer .copyright p {
 
 footer .copyright p span {
     color: var(--blueColor);
+}
+
+.footer-logo-pic{
+    width: 185px; 
+    height: auto;
+    border-radius: 50%; 
+    object-fit: cover;
 }
 
 @media(min-width: 768px) {
