@@ -194,10 +194,11 @@ header .container nav ul li a {
 }
 
 .logo-pic{
-    width: 85px; 
+    width: 75px; 
     height: auto;
     border-radius: 50%; 
     object-fit: cover;
+    margin-top: 0.5rem;
 }
 
 header .container nav ul li a.active,
@@ -241,7 +242,7 @@ header .container nav ul li a:hover {
     }
 }
 
-@media(min-width: 390px) {
+@media(max-width: 390px) {
     .logo-pic{
         width: 45px;
     }
@@ -1025,13 +1026,17 @@ footer .copyright p span {
     object-fit: cover;
 }
 
+.certification{
+    color: var(--blueColor) !important;
+}
 .cert{
-    text-decoration: underline;
+    text-decoration: underline var(--blueColor) ;
 }
 
 .cert:hover{
     cursor: pointer;
     background-color: lightgray;
+    text-decoration: none;
 }
 
 @media(min-width: 768px) {
