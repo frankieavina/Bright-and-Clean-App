@@ -12,7 +12,7 @@ let review = document.querySelector('#review'),
     reviewContent = document.querySelectorAll('#review-content .review-box'),
     leftArrow = document.querySelector('#left-arrow'),
     rightArrow = document.querySelector('#right-arrow'),
-    reviewSpeed = 4500,
+    reviewSpeed = 9000,
     currentSlide = 0,
     currentActive = 0,
     reviewTimer;
